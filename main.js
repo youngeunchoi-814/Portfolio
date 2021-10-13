@@ -36,6 +36,20 @@ const homeHight = home.getBoundingClientRect().height;
     home.style.opacity= (1 - window.scrollY / homeHight);
 });
 
+// Show "arrow-up"
+const arrowUp =  document.querySelector('.arrow-up');
+document.addEventListener('scroll',()=>{
+    if(window.scrollY>homeHight/2){
+        arrowUp.classList.add('visible');
+    }else{
+        arrowUp.classList.remove('visible');
+    }
+})
+
+arrowUp.addEventListener('click',()=>{
+    scrollIntoView('#home');
+});
+
 function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: "smooth"});
