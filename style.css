@@ -14,6 +14,8 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
+  --color-light-purple: #b39ddb;
+  --color-dark-purple: #836fa9;
 
   /* Font size */
   --font-large: 48px;
@@ -106,7 +108,7 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-pink);
+  background-color: var(--color-light-purple);
   padding: 2px;
 }
 
@@ -128,7 +130,7 @@ p {
 
 .navbar__menu__item:hover {
   border-color: var(--color-white);
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-dark-purple);
 }
 
 .navbar__toggle-btn {
@@ -140,7 +142,7 @@ p {
   display: none;
 }
 #home {
-  background: url("imgs/home-background.png") center/cover no-repeat;
+  background-color: var(--color-light-purple);
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -181,6 +183,10 @@ p {
 }
 
 /* About */
+#about p {
+  color: var(--color-dark-grey);
+  margin-top: 5px;
+}
 .about__majors {
   display: flex;
   justify-content: space-between;
@@ -203,7 +209,7 @@ p {
 }
 
 .majors__icon:hover i {
-  color: var(--color-pink);
+  color: var(--color-light-purple);
   transform: rotate(-30deg) scale(1.1);
 }
 
@@ -244,7 +250,7 @@ p {
 
 /* Skill */
 #skills {
-  background-color: var(--color-yellow);
+  background-color: #ede7f6;
 }
 
 .skillset {
@@ -293,13 +299,14 @@ p {
 
 .tools,
 .etc {
-  padding: 20px;
+  padding: 50px;
 }
 
 /* Wotk */
 .work__categories {
   margin: 40px;
 }
+
 .category__btn {
   border: 1px solid var(--color-dark-white);
   border-radius: var(--size-border-radius);
@@ -308,7 +315,7 @@ p {
 
 .category__btn.active,
 .category__btn:hover {
-  background-color: var(--color-pink);
+  background-color: var(--color-light-purple);
   color: var(--color-white);
 }
 
@@ -343,9 +350,9 @@ p {
   position: relative;
   display: flex;
   justify-content: center;
-  width: 280px;
+  width: 300px;
   height: 250px;
-  margin: 2px;
+  margin: 20px;
   background-color: var(--color-light-white);
   align-items: center;
 }
@@ -436,7 +443,7 @@ p {
 
 /* Contact */
 #contact {
-  background-color: var(--color-pink);
+  background-color: var(--color-light-purple);
 }
 
 .contact__title,
@@ -468,7 +475,7 @@ p {
   height: 60px;
   font-size: 50px;
   color: var(--color-white);
-  background-color: var(--color-pink);
+  background-color: var(--color-light-purple);
   border-radius: 50%;
   opacity: 0;
   pointer-events: none;
@@ -489,7 +496,7 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--color-pink);
+    background-color: var(--color-light-purple);
   }
 
   #navbar.navbar--dark {
